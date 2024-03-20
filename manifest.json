@@ -1,0 +1,42 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "EstudApp",
+  "orientation": "portrait",
+  "scope": "/",
+  "short_name": "EstudApp",
+  "start_url": "index.html",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "assets/icons/192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "description": "O EstudApp: Tudo que os estudantes precisam em um só lugar. Fique por dentro das notícias da escola, explore disciplinas, avalie professores e acesse vídeos e aulas particulares. Simplifique sua vida estudantil com nossa plataforma abrangente e fácil de usar.",
+  "id": "estudap",
+  "lang": "pt",
+  "display_override": [
+    "standalone",
+    "fullscreen",
+    "minimal-ui",
+    "browser",
+    "window-controls-overlay"
+  ],
+  "categories": [
+    "education",
+    "news",
+    "productivity",
+    "utilities"
+  ],
+  "prefer_related_applications": true
+}
