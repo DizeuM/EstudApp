@@ -7,6 +7,10 @@ headerTemplate.innerHTML = `
     @import url("/src/css/styles.css");
   </style>
 
+  <section class="text-center text-white">
+    <div class="mb-4">.</div>
+  </section>
+
   <nav class="container-fluid fixed-top border-bottom border-black border-2 bg-light px-4 ">
     <div class="row text-primary my-2 px-2 d-flex align-items-center">
         

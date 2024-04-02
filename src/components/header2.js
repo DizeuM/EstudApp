@@ -7,7 +7,7 @@ header2Template.innerHTML = `
     @import url("/src/css/styles.css");
   </style>
 
-  <section class="text-center">
+  <section class="text-center text-white">
     <div class="mb-5 pb-3">.</div>
   </section>
   
