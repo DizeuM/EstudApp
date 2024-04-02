@@ -8,77 +8,33 @@
 
         <title>Estudante app</title>
         <meta name="description" content="O EstudApp: Tudo que os estudantes precisam em um só lugar. Fique por dentro das notícias da escola, explore disciplinas, avalie professores e acesse vídeos e aulas particulares. Simplifique sua vida estudantil com nossa plataforma abrangente e fácil de usar." />
-        <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />   
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />   
+        <link rel="manifest" href="/public/manifest.json" />
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="/src/css/styles.css" rel="stylesheet" />
+        <script src="/src/components/header1.js" type="text/javascript" defer></script>
+        <script src="/src/components/menu.js" type="text/javascript" defer></script>
+
     </head>
 
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
 
-            <section class="text-center">
-                <div class="mb-4">.</div>
-            </section>
-
-            <nav class="container-fluid fixed-top border-bottom border-black border-2 bg-light px-4 ">
-                <div class="row text-primary my-2 px-2 d-flex align-items-center">
-                    
-                    <div class="col text-center mt-1">
-                        <h1 class=""><i class="bi bi-sticky-fill" style="font-size: 1.8rem;"></i> EstudApp</h1>
-                    </div>
-
-                </div>
-            </nav>
-
-            <nav class="container-fluid text-center fixed-bottom border-top border-black border-2 bg-light">
-
-                <div class="row justify-content-around py-2">
-
-                    <div onclick="location.href='index.html';" class="col-3">
-                        <div class="text-primary">
-                            <i class="bi bi-house-fill" style="font-size: 1.8rem;"></i>
-                            <h6>Home</h6>
-                        </div>
-                    </div>
-                    
-                    <div onclick="location.href='/buscar.html';"class="col-3">
-                        <div class="text-primary">
-                            <i class="bi bi-search" style="font-size: 1.8rem;"></i>
-                            <h6>Buscar</h6>
-                        </div>
-                    </div>
-
-                    <div onclick="location.href='#';"class="col-3">
-                        <div class="text-primary">
-                            <i class="bi bi-calendar-day-fill" style="font-size: 1.8rem;"></i>
-                            <h6>Calen...</h6>
-                        </div>
-                    </div>
-
-                    <div onclick="location.href='#';" style="cursor: pointer;" class="col-3">
-                        <div class="text-primary">
-                            <i class="bi bi-toggles" style="font-size: 1.8rem;"></i>
-                            <h6>Ajustes</h6>
-                        </div>
-                    </div>
-                      
-                </div>
-
-            </nav>
+            <header-component></header-component>
+            <menu-component></menu-component>
 
             <header class="mb-4">
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="assets/img1.png" class="d-block w-100" alt="...">
+                        <img src="/src/assets/img1.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img2.png" class="d-block w-100" alt="...">
+                        <img src="/src/assets/img2.png class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img3.png" class="d-block w-100" alt="...">
+                        <img src="/src/assets/img3.png" class="d-block w-100" alt="...">
                     </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -97,7 +53,7 @@
                     
                     <div class="row gap-3 mb-3 px-3">
 
-                        <div onclick="location.href='/disciplinas/periodo.html';" class="col text-bg-primary rounded-4 pt-1 pb-3 text-center">
+                        <div onclick="location.href='/src/pages/disciplinas/periodo.html';" class="col text-bg-primary rounded-4 pt-1 pb-3 text-center">
                             <i class="bi bi-book-half" style="font-size: 3rem;"></i>
                             <h5 class="card-title">Disciplinas</h5>
                         </div>
@@ -120,7 +76,6 @@
                             </span>
                         </div>
 
-
                         <div onclick="location.href='#';"  class="col text-bg-primary rounded-4 pt-1 pb-3 text-center">
                             <i class="bi bi-play-btn-fill" style="font-size: 3rem;"></i>
                             <h5 class="card-title">Vídeo aulas</h5>
@@ -129,7 +84,7 @@
                     </div>
                 </div>
             </section>
-            
+
             <section class="mb-4" id="card1">
                 <div class="container px-4">
 
@@ -138,7 +93,7 @@
                     <div class="card mb-3">
                         <div class="row g-0">
                             <div class="col-4">
-                                <img src="assets/not1.png" class="img-fluid rounded-start h-100" alt="...">
+                                <img src="/src/assets/not1.png" class="img-fluid rounded-start h-100" alt="...">
                             </div>
                             <div class="col-8">
                             <div class="card-body">
@@ -158,7 +113,7 @@
                             </div>
                             </div>
                             <div class="col-4">
-                                <img src="assets/not2.png" class="img-fluid rounded-end h-100" alt="...">
+                                <img src="/src/assets/not2.png" class="img-fluid rounded-end h-100" alt="...">
                             </div>
                         </div>
                     </div>
@@ -166,7 +121,7 @@
                     <div class="card mb-3">
                         <div class="row g-0">
                             <div class="col-4">
-                                <img src="assets/not3.png" class="img-fluid rounded-start h-100" alt="...">
+                                <img src="/src/assets/not3.png" class="img-fluid rounded-start h-100" alt="...">
                             </div>
                             <div class="col-8">
                             <div class="card-body">
@@ -184,7 +139,6 @@
                 <div class="mt-5">.</div>
                 <div class="mt-4">.</div>
             </section>
-
         </main>
         
         <script type="module">
@@ -193,7 +147,8 @@
             }
         </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/scripts.js"></script>
+        <script src="/src/js/scripts.js"></script>
+        
 
     </body>
 </html>
