@@ -54,14 +54,14 @@
             };
     
             function mostrarDetalhesPeriodo() {
-                var id = obterParametroDaURL('id');
+                var periodo = obterParametroDaURL('periodo');
                 var tipo = obterParametroDaURL('tipo');
     
-                if (tipo !== '' && id !== '') {
+                if (tipo !== '' && periodo !== '') {
                     if (tipo == 'tecnico') {
-                        document.getElementById('detalhesPeriodo').textContent = `Disciplinas técnicas do ${id}° período`;
+                        document.getElementById('detalhesPeriodo').textContent = `Disciplinas técnicas do ${periodo}° período`;
                     }else{
-                        document.getElementById('detalhesPeriodo').textContent = `Disciplinas do ${id}° período`;
+                        document.getElementById('detalhesPeriodo').textContent = `Disciplinas do ${periodo}° período`;
                     }
                 } else {
                     console.error('Tipo ou ID não encontrados na URL.');
