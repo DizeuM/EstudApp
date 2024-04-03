@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="author" content="Mateus Dizeu" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <title>Estudante app</title>
+        <meta name="description" content="O EstudApp: Tudo que os estudantes precisam em um só lugar. Fique por dentro das notícias da escola, explore disciplinas, avalie professores e acesse vídeos e aulas particulares. Simplifique sua vida estudantil com nossa plataforma abrangente e fácil de usar." />
+        <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />   
+        <link rel="manifest" href="/public/manifest.json" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="/src/css/styles.css" rel="stylesheet" />
+        <script src="/src/components/header2.js" type="text/javascript" defer></script>
+        <script src="/src/components/menu.js" type="text/javascript" defer></script>
+
+    </head>
+
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+
+            <header2-component></header2-component>
+            <menu-component></menu-component>
+
+            <section class="mb-4" id="disciplinas">
+                <div class="container px-4">
+
+                    <h1 class="mb-4" id="detalhesPeriodo"></h1>
+
+                    <div id="disciplinas-container"></div>
+                    
+                </div>
+            </section>
+            
+            <section class="text-center text-white">
+                <div class="mt-5">.</div>
+                <div class="mt-4">.</div>
+            </section>
+
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/src/js/scripts.js"></script>
+        <script src="/src/js/disciplinas.js"></script>
+
+        <script>
+            function obterParametroDaURL(nome) {
+                nome = nome.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+                var regex = new RegExp('[\\?&]' + nome + '=([^&#]*)');
+                var resultados = regex.exec(location.search);
+                return resultados === null ? '' : decodeURIComponent(resultados[1].replace(/\+/g, ' '));
+            };
+    
+            function mostrarDetalhesPeriodo() {
+                var id = obterParametroDaURL('id');
+                var tipo = obterParametroDaURL('tipo');
+    
+                if (tipo !== '' && id !== '') {
+                    if (tipo == 'tecnico') {
+                        document.getElementById('detalhesPeriodo').textContent = `Disciplinas técnicas do ${id}° período`;
+                    }else{
+                        document.getElementById('detalhesPeriodo').textContent = `Disciplinas do ${id}° período`;
+                    }
+                } else {
+                    console.error('Tipo ou ID não encontrados na URL.');
+                }
+            }
+    
+            window.onload = mostrarDetalhesPeriodo;
+        </script>
+    </body>
+</html>

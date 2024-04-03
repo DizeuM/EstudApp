@@ -1,0 +1,196 @@
+{
+  "periodos": {
+    "1": {
+      "medio": {
+        "id": 1,
+        "disciplinas": [
+          {"id": 1, "nome": "Matemática", "professor": "João", "carga_horaria": 60},
+          {"id": 2, "nome": "Português", "professor": "Maria", "carga_horaria": 60},
+          {"id": 3, "nome": "História", "professor": "Carlos", "carga_horaria": 60},
+          {"id": 4, "nome": "Biologia", "professor": "Ana", "carga_horaria": 60},
+          {"id": 5, "nome": "Física", "professor": "Pedro", "carga_horaria": 60},
+          {"id": 6, "nome": "Química", "professor": "Marta", "carga_horaria": 60}
+        ]
+      },
+      "tecnico": {
+        "id": 1,
+        "disciplinas": [
+          {"id": 7, "nome": "Programação Básica", "professor": "Ana", "carga_horaria": 80},
+          {"id": 8, "nome": "Eletrônica Digital", "professor": "Pedro", "carga_horaria": 80},
+          {"id": 9, "nome": "Introdução a Redes de Computadores", "professor": "Marta", "carga_horaria": 80},
+          {"id": 10, "nome": "Sistemas Operacionais", "professor": "Lucas", "carga_horaria": 80},
+          {"id": 11, "nome": "Banco de Dados", "professor": "Fernanda", "carga_horaria": 80},
+          {"id": 12, "nome": "Desenvolvimento Web", "professor": "Ricardo", "carga_horaria": 80}
+        ]
+      }
+    },
+    "2": {
+      "medio": {
+        "id": 2,
+        "disciplinas": [
+          {"id": 13, "nome": "Geografia", "professor": "Luísa", "carga_horaria": 60},
+          {"id": 14, "nome": "Literatura", "professor": "Mariana", "carga_horaria": 60},
+          {"id": 15, "nome": "Educação Física", "professor": "Fernando", "carga_horaria": 60},
+          {"id": 16, "nome": "Artes", "professor": "Ana", "carga_horaria": 60},
+          {"id": 17, "nome": "Sociologia", "professor": "Pedro", "carga_horaria": 60},
+          {"id": 18, "nome": "Filosofia", "professor": "Luciana", "carga_horaria": 60}
+        ]
+      },
+      "tecnico": {
+        "id": 2,
+        "disciplinas": [
+          {"id": 19, "nome": "Programação Orientada a Objetos", "professor": "Fernando", "carga_horaria": 80},
+          {"id": 20, "nome": "Banco de Dados Avançado", "professor": "Mariana", "carga_horaria": 80},
+          {"id": 21, "nome": "Sistemas Distribuídos", "professor": "Pedro", "carga_horaria": 80},
+          {"id": 22, "nome": "Administração de Redes", "professor": "Ricardo", "carga_horaria": 80},
+          {"id": 23, "nome": "Desenvolvimento Mobile", "professor": "Marta", "carga_horaria": 80},
+          {"id": 24, "nome": "Segurança da Informação", "professor": "João", "carga_horaria": 80}
+        ]
+      }
+    },
+    "3": {
+      "medio": {
+        "id": 3,
+        "disciplinas": [
+          {"id": 25, "nome": "Língua Estrangeira", "professor": "Ana", "carga_horaria": 60},
+          {"id": 26, "nome": "Economia", "professor": "Ricardo", "carga_horaria": 60},
+          {"id": 27, "nome": "Geografia Humana", "professor": "Maria", "carga_horaria": 60},
+          {"id": 28, "nome": "Arte Moderna", "professor": "João", "carga_horaria": 60},
+          {"id": 29, "nome": "História da Filosofia", "professor": "Luciana", "carga_horaria": 60},
+          {"id": 30, "nome": "Lógica", "professor": "Fernando", "carga_horaria": 60}
+        ]
+      },
+      "tecnico": {
+        "id": 3,
+        "disciplinas": [
+          {"id": 31, "nome": "Gestão de Projetos", "professor": "Marta", "carga_horaria": 80},
+          {"id": 32, "nome": "Redes de Computadores Avançadas", "professor": "Pedro", "carga_horaria": 80},
+          {"id": 33, "nome": "Desenvolvimento Ágil de Software", "professor": "Lucas", "carga_horaria": 80},
+          {"id": 34, "nome": "Cloud Computing", "professor": "Mariana", "carga_horaria": 80},
+          {"id": 35, "nome": "Administração de Banco de Dados", "professor": "Ana", "carga_horaria": 80},
+          {"id": 36, "nome": "Sistemas Embarcados", "professor": "Carlos", "carga_horaria": 80}
+        ]
+      }
+    },
+    "4": {
+      "medio": {
+        "id": 4,
+        "disciplinas": [
+          {"id": 37, "nome": "Fisiologia", "professor": "Mariana", "carga_horaria": 60},
+          {"id": 38, "nome": "Literatura Brasileira", "professor": "Carlos", "carga_horaria": 60},
+          {"id": 39, "nome": "Biologia Molecular", "professor": "Ana", "carga_horaria": 60},
+          {"id": 40, "nome": "Educação Ambiental", "professor": "João", "carga_horaria": 60},
+          {"id": 41, "nome": "Sociologia Contemporânea", "professor": "Pedro", "carga_horaria": 60},
+          {"id": 42, "nome": "Filosofia Política", "professor": "Luciana", "carga_horaria": 60}
+        ]
+      },
+      "tecnico": {
+        "id": 4,
+        "disciplinas": [
+          {"id": 43, "nome": "Gestão de Projetos de TI", "professor": "Fernando", "carga_horaria": 80},
+          {"id": 44, "nome": "Segurança de Rede", "professor": "Ricardo", "carga_horaria": 80},
+          {"id": 45, "nome": "Sistemas de Informação Gerencial", "professor": "Maria", "carga_horaria": 80},
+          {"id": 46, "nome": "Desenvolvimento de Sistemas Distribuídos", "professor": "Marta", "carga_horaria": 80},
+          {"id": 47, "nome": "Banco de Dados Distribuídos", "professor": "Lucas", "carga_horaria": 80},
+          {"id": 48, "nome": "Integração de Sistemas", "professor": "Ana", "carga_horaria": 80}
+        ]
+      }
+    },
+    "5": {
+      "medio": {
+        "id": 5,
+        "disciplinas": [
+          {"id": 49, "nome": "Arte Contemporânea", "professor": "Lucas", "carga_horaria": 60},
+          {"id": 50, "nome": "Geografia Física", "professor": "Maria", "carga_horaria": 60},
+          {"id": 51, "nome": "Literatura Portuguesa", "professor": "Carlos", "carga_horaria": 60},
+          {"id": 52, "nome": "Anatomia Humana", "professor": "Ana", "carga_horaria": 60},
+          {"id": 53, "nome": "História do Brasil", "professor": "João", "carga_horaria": 60},
+          {"id": 54, "nome": "Antropologia", "professor": "Marta", "carga_horaria": 60}
+        ]
+      },
+      "tecnico": {
+        "id": 5,
+        "disciplinas": [
+          {"id": 55, "nome": "Gestão da Qualidade de Software", "professor": "Fernando", "carga_horaria": 80},
+          {"id": 56, "nome": "Segurança em Computação", "professor": "Pedro", "carga_horaria": 80},
+          {"id": 57, "nome": "Computação em Nuvem", "professor": "Ricardo", "carga_horaria": 80},
+          {"id": 58, "nome": "Desenvolvimento de Aplicações Móveis", "professor": "Mariana", "carga_horaria": 80},
+          {"id": 59, "nome": "Administração de Redes Avançada", "professor": "Luciana", "carga_horaria": 80},
+          {"id": 60, "nome": "E-commerce", "professor": "Ana", "carga_horaria": 80}
+        ]
+      }
+    },
+    "6": {
+      "medio": {
+        "id": 6,
+        "disciplinas": [
+          {"id": 61, "nome": "Ecologia", "professor": "Marta", "carga_horaria": 60},
+          {"id": 62, "nome": "Literatura Estrangeira", "professor": "Lucas", "carga_horaria": 60},
+          {"id": 63, "nome": "História Geral", "professor": "Carlos", "carga_horaria": 60},
+          {"id": 64, "nome": "Genética", "professor": "Ana", "carga_horaria": 60},
+          {"id": 65, "nome": "Arte Brasileira", "professor": "João", "carga_horaria": 60},
+          {"id": 66, "nome": "Sociologia Brasileira", "professor": "Pedro", "carga_horaria": 60}
+        ]
+      },
+      "tecnico": {
+        "id": 6,
+        "disciplinas": [
+          {"id": 67, "nome": "Gestão de Projetos de Software", "professor": "Fernando", "carga_horaria": 80},
+          {"id": 68, "nome": "Segurança de Sistemas", "professor": "Ricardo", "carga_horaria": 80},
+          {"id": 69, "nome": "Administração de Banco de Dados Avançada", "professor": "Maria", "carga_horaria": 80},
+          {"id": 70, "nome": "Desenvolvimento Ágil de Software", "professor": "Marta", "carga_horaria": 80},
+          {"id": 71, "nome": "Sistemas Embarcados Avançados", "professor": "Lucas", "carga_horaria": 80},
+          {"id": 72, "nome": "Gestão de Tecnologia da Informação", "professor": "Ana", "carga_horaria": 80}
+        ]
+      }
+    },
+    "7": {
+      "medio": {
+        "id": 7,
+        "disciplinas": [
+          {"id": 73, "nome": "Ecologia", "professor": "Marta", "carga_horaria": 60},
+          {"id": 74, "nome": "Literatura Estrangeira", "professor": "Lucas", "carga_horaria": 60},
+          {"id": 75, "nome": "História Geral", "professor": "Carlos", "carga_horaria": 60},
+          {"id": 76, "nome": "Genética", "professor": "Ana", "carga_horaria": 60},
+          {"id": 77, "nome": "Arte Brasileira", "professor": "João", "carga_horaria": 60},
+          {"id": 78, "nome": "Sociologia Brasileira", "professor": "Pedro", "carga_horaria": 60}
+        ]
+      },
+      "tecnico": {
+        "id": 7,
+        "disciplinas": [
+          {"id": 79, "nome": "Gestão de Projetos de Software", "professor": "Fernando", "carga_horaria": 80},
+          {"id": 80, "nome": "Segurança de Sistemas", "professor": "Ricardo", "carga_horaria": 80},
+          {"id": 81, "nome": "Administração de Banco de Dados Avançada", "professor": "Maria", "carga_horaria": 80},
+          {"id": 82, "nome": "Desenvolvimento Ágil de Software", "professor": "Marta", "carga_horaria": 80},
+          {"id": 83, "nome": "Sistemas Embarcados Avançados", "professor": "Lucas", "carga_horaria": 80},
+          {"id": 84, "nome": "Gestão de Tecnologia da Informação", "professor": "Ana", "carga_horaria": 80}
+        ]
+      }
+    },
+    "8": {
+      "medio": {
+        "id": 8,
+        "disciplinas": [
+          {"id": 85, "nome": "Ecologia", "professor": "Marta", "carga_horaria": 60},
+          {"id": 86, "nome": "Literatura Estrangeira", "professor": "Lucas", "carga_horaria": 60},
+          {"id": 87, "nome": "História Geral", "professor": "Carlos", "carga_horaria": 60},
+          {"id": 88, "nome": "Genética", "professor": "Ana", "carga_horaria": 60},
+          {"id": 89, "nome": "Arte Brasileira", "professor": "João", "carga_horaria": 60},
+          {"id": 90, "nome": "Sociologia Brasileira", "professor": "Pedro", "carga_horaria": 60}
+        ]
+      },
+      "tecnico": {
+        "id": 8,
+        "disciplinas": [
+          {"id": 91, "nome": "Gestão de Projetos de Software", "professor": "Fernando", "carga_horaria": 80},
+          {"id": 92, "nome": "Segurança de Sistemas", "professor": "Ricardo", "carga_horaria": 80},
+          {"id": 93, "nome": "Administração de Banco de Dados Avançada", "professor": "Maria", "carga_horaria": 80},
+          {"id": 94, "nome": "Desenvolvimento Ágil de Software", "professor": "Marta", "carga_horaria": 80},
+          {"id": 95, "nome": "Sistemas Embarcados Avançados", "professor": "Lucas", "carga_horaria": 80},
+          {"id": 96, "nome": "Gestão de Tecnologia da Informação", "professor": "Ana", "carga_horaria": 80}
+        ]
+      }
+    }
+  }
+}

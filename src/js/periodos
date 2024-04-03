@@ -1,0 +1,54 @@
+const req = new XMLHttpRequest();
+const PeriodosElement = document.getElementById('Periodos');
+
+let contents = [];
+
+req.onload = () => {
+    let res = JSON.parse(req.response);
+
+    if (req.readyState === 4 && req.status === 200) {
+        for (const value of Object.values(res)) {
+            content = `
+
+            <div class="mb-3">
+            <button class="btn btn-primary btn-lg w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                1° Período
+            </button>
+
+                <div class="collapse w-100 mt-n2" id="collapse2">
+                    <div class="border rounded-3 border-primary p-3 pt-4">
+                        <div class="row">
+
+                            <div class="col">
+                                <button type="button" onclick="location.href='#';" class="btn btn-lg btn-outline-primary w-100">Médio</button>
+                            </div>
+                            
+                            <div class="col">
+                                <button type="button" onclick="location.href='#';" class="btn btn-lg btn-outline-primary w-100">Técnico</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="card">
+                <a href="disciplinas.html?id=${value.id}"></a>
+            </div>
+
+            `;
+            contents.push(content);
+        };
+
+        PeriodosElement.innerHTML = contents.join('');
+    };
+};
+
+req.open('GET', '/src/data/disciplinas.json');
+req.send();
