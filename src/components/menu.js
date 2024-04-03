@@ -10,7 +10,7 @@ menuTemplate.innerHTML = `
 
     <div class="row justify-content-around py-2">
 
-        <div onclick="location.href='/src/pages/index.html';" class="col-3">
+        <div onclick="location.href='/index.html';" class="col-3">
             <div class="text-primary">
                 <i class="bi bi-house-fill" style="font-size: 1.8rem;"></i>
                 <h6>Home</h6>
