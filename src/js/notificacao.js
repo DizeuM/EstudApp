@@ -4,4 +4,6 @@ function requestPermission() {
     alert('Notification API not supported!');
     return;
   }
+  
+  Notification.requestPermission();
 }
