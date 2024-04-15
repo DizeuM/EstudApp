@@ -192,19 +192,24 @@
         </main>
 
         <script>
-            function checkAndOpenModal() {
+            function checkPermission() {
                 if (Notification.permission === "default") {
                     modalOpenButton.click();
                     
-                    var checkPermissionInterval = setInterval(() => {
+                    var waitForPermission = setInterval(() => {
                         if (Notification.permission !== "default") {
-                            clearInterval(checkPermissionInterval);
+                            clearInterval(waitForPermission);
                             modalCloseButton.click();
+                            nonPersistentNotification();
                         }
                     }, 1000);
                 }
+
+                if (Notification.permission === "granted") {
+                    nonPersistentNotification();
+                }
             }
-            setTimeout(checkAndOpenModal, 3000);         
+            setTimeout(checkPermission, 3000);         
         </script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
